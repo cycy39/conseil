@@ -1,0 +1,102 @@
+/*Customization of the titles*/
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+hr {
+    bottom: 30%;
+}
+
+#footer {
+    padding-bottom: 2em;
+}
+
+/* Customization Style of SyoTimer */
+.syotimer {
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 0 0 10px;
+    color: white;
+}
+
+.syotimer-cell {
+    display: inline-block;
+    margin: 0 5px;
+
+    width: 79px;
+    background: url(../demos/images/timer.png) no-repeat 0 0;
+    color: white;
+}
+
+.syotimer-cell__value {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    height: 81px;
+    line-height: 81px;
+    margin: 0 0 5px;
+}
+
+.syotimer-cell__unit {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+#simple-timer .syotimer-cell_type_day,
+#periodic-timer_period_days .syotimer-cell_type_hour,
+#layout-timer_only-seconds .syotimer-cell_type_second,
+#layout-timer_mixed-units .syotimer-cell_type_minute {
+    width: 79px;
+    background-image: url(../demos/images/timer_long.png) no-repeat 0 0;
+}
+
+.option {
+    font-weight: 700;
+}
+
+/* For layout demo page */
+body {
+    font-family: 'Poppins', Tahoma, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #2C75FF, #8A2BE2);
+}
+
+pre {
+    width: 600px;
+    margin: 0 auto 10px;
+    padding: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+
+/* Flex Layout */
+#page {
+    min-height: 100vh; /* 1 */
+    display: flex; /* 2 */
+    flex-direction: column; /* 3 */
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#content {
+    flex-grow: 1; /* 4 */
+    display: flex;
+}
+
+.centered {
+    margin: auto;
+    display: flex;
+    place-items: center;
+    align-items: center;
+}
+
